@@ -1,8 +1,11 @@
 name: cc-alpha
-version: 0.1.0
+version: 0.1.1
 
 authors:
   - Crystal Neal <cdneal091@gmail.com>
+
+description: |
+  The library that cc servers are built on. You need this.
 
 crystal: 0.31.1
 

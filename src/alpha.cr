@@ -4,5 +4,8 @@ require "json"
 require "./alpha/*"
 
 module Alpha
-  VERSION = "0.1.0"
+  VERSION = "0.1.1"
+  def self.test
+    puts "test"
+  end
 end
