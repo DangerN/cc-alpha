@@ -1,8 +1,8 @@
-name: alpha
+name: cc-alpha
 version: 0.1.0
 
 authors:
-  - your-name-here <cdneal091@gmail.com>
+  - Crystal Neal <cdneal091@gmail.com>
 
 crystal: 0.31.1
 
