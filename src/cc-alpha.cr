@@ -20,6 +20,10 @@ module Alpha
     board_list
   end
 
+  def self.boards=(boards)
+    @@boards = boards
+  end
+
 end
 
 def board_by_id(board_id)
