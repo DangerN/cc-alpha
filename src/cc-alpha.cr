@@ -4,7 +4,7 @@ require "json"
 require "./cc-alpha/*"
 
 module Alpha
-  VERSION = "0.1.4"
+  VERSION = "0.1.5"
   @@boards = {} of String => Board
 
   def self.boards
@@ -23,7 +23,6 @@ module Alpha
   def self.boards=(boards)
     @@boards = boards
   end
-
 end
 
 def board_by_id(board_id)

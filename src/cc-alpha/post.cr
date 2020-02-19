@@ -9,5 +9,7 @@ module Alpha
       name: {type: String, default: "Anonymous"},
       subject: {type: String, default: ""}
     )
+
+    property id, badges, flags, text, media_name, name, subject
   end
 end

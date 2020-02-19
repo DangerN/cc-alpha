@@ -7,6 +7,8 @@ module Alpha
       posts: Array(Post)
     )
 
+    property id, flags, post_limit, posts
+
     # Creates a `Post` and adds it to this `Thread`'s post list.
     def add_post(post_json)
       @posts << Post.from_json(post_json)
