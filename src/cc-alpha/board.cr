@@ -8,7 +8,7 @@ module Alpha
       threads: Hash(String, Thread),
     )
 
-    property id, name, flags, thread_limit, threads, post_count, thread_count
+    property id, name, flags, thread_limit, threads
 
     def initialize(id, name, flags, thread_limit)
       @id = id
