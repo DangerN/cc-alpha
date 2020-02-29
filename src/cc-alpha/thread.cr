@@ -9,6 +9,13 @@ module Alpha
 
     property id, flags, post_limit, posts
 
+    def initialize(id, flags, post_limit)
+      @id = id
+      @flags = flags
+      @post_limit = post_limit
+      @posts = [] of Post
+    end
+
     # Creates a `Post` and adds it to this `Thread`'s post list.
     def add_post(post_json)
       @posts << Post.from_json(post_json)

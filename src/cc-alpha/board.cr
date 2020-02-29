@@ -6,11 +6,17 @@ module Alpha
       flags: Array(String),
       thread_limit: {type: UInt8, default: 25.to_u8},
       threads: Hash(String, Thread),
-      post_count: {type: UInt64, default: 0.to_u64},
-      thread_count: {type: UInt64, default: 0.to_u64}
     )
 
     property id, name, flags, thread_limit, threads, post_count, thread_count
+
+    def initialize(id, name, flags, thread_limit)
+      @id = id
+      @name = name
+      @flags = flags
+      @threads = {} of String => Thread
+      @thread_limit = thread_limit.to_u8 || 25.to_u8
+    end
 
     # Creates a `Thread` and add it to `Board`'s thread list.
     def add_thread(thread_json)
