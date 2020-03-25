@@ -23,6 +23,5 @@ module Alpha
       @flags = flags
       @time_stamp = time_stamp
     end
-
   end
 end

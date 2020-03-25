@@ -10,12 +10,12 @@ module Alpha
 
     property id, name, flags, thread_limit, threads
 
-    def initialize(id, name, flags, thread_limit)
+    def initialize(id, name, **args)
       @id = id
       @name = name
-      @flags = flags
+      @flags = args[:flags]? || [] of String
       @threads = {} of String => Thread
-      @thread_limit = thread_limit.to_u8 || 25.to_u8
+      @thread_limit = args[:thread_limit]? || 25.to_u8
     end
 
     # Creates a `Thread` and add it to `Board`'s thread list.

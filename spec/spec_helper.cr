@@ -1,2 +1,2 @@
 require "spec"
-require "../src/alpha"
+require "../src/cc-alpha"
