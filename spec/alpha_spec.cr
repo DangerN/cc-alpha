@@ -5,12 +5,13 @@ describe Alpha do
 
   describe Alpha::Board do
     it "can be initialized with id and name" do
-      board = Alpha::Board.new("test", "Test")
-      board.should be_a(Alpha::Board)
+      Alpha::Board.new("test", "Test").should be_a(Alpha::Board)
     end
-  end
 
-  it "works" do
-    false.should eq(false)
+    it "must have id and name to initialize" do
+      # expect_raises(klass) do
+        Alpha::Board.new()
+      # end
+    end
   end
 end
